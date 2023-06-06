@@ -9,12 +9,13 @@
 size_t print_listint(const listint_t *x)
 {
 size_t count = 0;
-while (x != NULL)
+
+while (x)
 {
-printf("%d, ", x->n);
+printf("%d\n", x->n);
 count++;
 x = x->next;
 }
-printf("\n");
+
 return (count);
 }
